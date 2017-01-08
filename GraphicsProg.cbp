@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GraphicsProg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GraphicsProg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GraphicsProg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-I include" />
+			<Add option="-I/home/ross/graphics/OpenGL-tutorial_v0014_33/external/glfw-3.0.3/include/GLFW" />
+			<Add option="-I/home/ross/graphics/OpenGL-tutorial_v0014_33/external/glm-0.9.4.0" />
+		</Compiler>
+		<Linker>
+			<Add option="-L/home/ross/graphics/OpenGL-tutorial_v0014_33/build/external/glfw-3.0.3/src -lglfw3" />
+			<Add option="-L/home/ross/graphics/OpenGL-tutorial_v0014_33/build/external -lANTTWEAKBAR_116_OGLCORE_GLFW -lGLEW_190" />
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add library="pthread" />
+			<Add library="Xrandr" />
+			<Add library="Xi" />
+		</Linker>
+		<Unit filename="include/buildRoom.hpp" />
+		<Unit filename="include/camara.hpp" />
+		<Unit filename="include/objLoader.hpp" />
+		<Unit filename="include/objectGen.hpp" />
+		<Unit filename="include/objectList.hpp" />
+		<Unit filename="include/shader.hpp" />
+		<Unit filename="include/texture.hpp" />
+		<Unit filename="include/vboIndexer.hpp" />
+		<Unit filename="src/common/objLoader.cpp" />
+		<Unit filename="src/common/shader.cpp" />
+		<Unit filename="src/common/texture.cpp" />
+		<Unit filename="src/common/vboIndexer.cpp" />
+		<Unit filename="src/main/buildRoom.cpp" />
+		<Unit filename="src/main/camara.cpp" />
+		<Unit filename="src/main/main.cpp" />
+		<Unit filename="src/main/objectGen.cpp" />
+		<Unit filename="src/main/objectList.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
