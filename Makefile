@@ -9,7 +9,7 @@ SRC       := $(foreach sdir,$(SRC_DIR),$(wildcard $(sdir)/*.cpp))
 OBJ       := $(patsubst src/%.cpp,build/%.o,$(SRC))
 EXE       := firstProg
 
-INCLUDES   = -I/home/rmaspero/graphics/GraphicsProg/include
+INCLUDES   = -I include
 LIBS += -lglut -lGL -lGLU -lX11 -lXxf86vm -lpthread -lXrandr -lXi -lglfw -lGLEW -lSOIL
 
 vpath %.cpp $(SRC_DIR)
